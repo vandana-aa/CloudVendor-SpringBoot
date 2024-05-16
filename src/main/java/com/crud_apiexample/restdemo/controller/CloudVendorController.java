@@ -53,7 +53,7 @@ public class CloudVendorController {
         return "Cloud Vendor Updated Successfully";
     }
 
-    @DeleteMapping({"vendorId"})
+    @DeleteMapping("{vendorId}")
     public String deleteCloudVendorDetails(@PathVariable("vendorId") String vendorId)
     {
         cloudVendorService.deleteCloudVendor(vendorId);
